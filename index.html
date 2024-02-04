@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Company News Time Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Company News Time Calculator</h1>
+
+  <label for="employeeCount">Number of Employees (n): </label>
+  <input type="number" id="employeeCount" min="1" required>
+  <br>
+
+  <label for="headID">Head of the Company (headID): </label>
+  <input type="number" id="headID" min="0" required>
+  <br>
+
+  <label for="manager">Direct Manager IDs (comma-separated): </label>
+  <input type="text" id="manager" required>
+  <br>
+
+  <label for="informTime">Inform Time for Each Employee (comma-separated): </label>
+  <input type="text" id="informTime" required>
+  <br>
+
+  <button onclick="calculateTime()">Calculate Time</button>
+
+  <div id="result"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
